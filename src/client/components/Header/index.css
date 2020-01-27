@@ -1,0 +1,55 @@
+.bg-light {
+	background-color: #f2f2f2 !important;
+}
+
+.navbar {
+	min-height: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.navbar-nav {
+	flex: 1;
+	padding-right: 40px;
+}
+
+.navbar-brand {
+	margin-right: 35px;
+}
+
+.navbar-nav .input-group {
+	padding-right: 34px;
+	height: 50px;
+}
+
+.navbar-nav .input-group input {
+	height: 50px;
+}
+
+.btn-danger {
+	background-color: #f43939;
+	border-color: #f43939;
+}
+
+.btn-dark {
+	background-color: #000000;
+	border-color: #000000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	padding-left: 17px;
+	padding-right: 17px;
+	color: #000000;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.navbar-light .form-inline button {
+	font-size: 16px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.navbar-light .form-inline button + button {
+	margin-left: 15px;
+}

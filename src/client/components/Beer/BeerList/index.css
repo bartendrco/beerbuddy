@@ -1,0 +1,32 @@
+.beer {
+	padding: 20px;
+	border: 1px solid #c6c6c6;
+	border-radius: 5px;
+}
+
+.beer + .beer {
+	margin-top: 20px;
+}
+
+.beer .beer-name {
+	font-size: 30px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.beer .brewery {
+	font-size: 18px;
+	margin-bottom: 24px;
+}
+
+.beer .tag {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+
+.beer .description {
+	font-size: 16px;
+	margin-bottom: 0;
+	line-height: 18px;
+}

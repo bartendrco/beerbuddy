@@ -2,10 +2,25 @@
 	padding: 20px;
 	border: 1px solid #c6c6c6;
 	border-radius: 5px;
+	overflow: hidden;
+}
+
+.beer:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .beer + .beer {
 	margin-top: 20px;
+}
+
+.beer:last-child {
+	padding-bottom: 20px;
+	border: 1px solid #c6c6c6;
+}
+
+.beer img {
+	width: 200px;
+	height: 200px;
 }
 
 .beer .beer-name {
@@ -29,4 +44,100 @@
 	font-size: 16px;
 	margin-bottom: 0;
 	line-height: 18px;
+}
+
+.beer .more-button {
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-bottom: 0;
+}
+
+.pagination li .page-link {
+	border: none;
+	color: black;
+}
+
+.pagination li.active .page-link {
+	font-weight: bold;
+	background: none;
+	color: black;
+}
+
+.pagination {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+	.no-gutter.row {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.search-page .filter .filter {
+		padding-left: 15px;
+	}
+
+	.beer {
+		padding: 0;
+		border: 0;
+		padding-top: 32px;
+		padding-left: 15px;
+		padding-right: 15px;
+		border-radius: 0;
+	}
+
+	.beer:hover {
+		box-shadow: none;
+	}
+
+	.beer {
+		border: none;
+		border-top: 1px solid #c6c6c6;
+	}
+
+	.beer img {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.beer {
+		padding-top: 20px;
+	}
+
+	.beer + .beer {
+		margin-top: 10px;
+	}
+
+	.beer:last-child {
+		padding-bottom: 10px;
+	}
+
+	.beer img {
+		margin-right: 1rem !important;
+		width: 100px;
+		height: 100px;
+	}
+
+	.beer .beer-name {
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+
+	.beer .brewery, .beer .tag {
+		margin-bottom: 8px;
+		font-size: 16px;
+	}
+
+	.beer .description {
+		font-size: 14px;
+	}
+
+	.pagination {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
 }

@@ -1,26 +1,11 @@
 section.search-page {
-	min-height: 930px;
-	max-width: 1440px;
+	max-width: 1470px;
 	margin: 0 auto;
 }
 
 .search-page .container-fluid {
 	padding-left: 100px;
 	padding-right: 100px;
-}
-
-.search-page .no-gutter.row {
-	margin-left: 0;
-	margin-right: 0;
-}
-
-.search-page .no-gutter.row div[class*='col-'] {
-	padding-right: 0;
-	padding-left: 0;
-}
-
-.search-page .no-gutter.row div.col-md-9 {
-	padding-right: 130px;
 }
 
 .search-page .filter {
@@ -30,4 +15,44 @@ section.search-page {
 .search-page .right-sidebar {
 	background-color: #cccccc;
 	height: 595px;
+}
+
+.search-page .beer-list {
+	padding-right: 115px;
+}
+
+.search-page .no-gutter.row:first-child > div.beer-list {
+	padding-right: 115px;
+}
+
+@media screen and (max-width: 1365px) {
+	.search-page .beer-list {
+		padding-right: 15px;
+	}
+
+	.search-page .container-fluid {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.search-page .no-gutter.row:first-child > div.beer-list {
+		padding-right: 15px;
+	}
+}
+
+@media screen and (max-width: 1279px) {
+	.right-sidebar {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.search-page .beer-list {
+		padding: 0;
+	}
+
+	.search-page .container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }

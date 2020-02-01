@@ -1,0 +1,65 @@
+.mobile-filter-button.btn-primary {
+    background: none;
+    border-color: #999999;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: none;
+}
+
+.mobile-filter-button.btn-primary:first-child:before {
+    content: url("../../../assets/images/all-icon.svg");
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.mobile-filter-button:first-child {
+    min-width: 90px;
+}
+
+.mobile-filter-button:not(:first-child):after {
+    border: none;
+    margin-left: .7em;
+    vertical-align: .1em;
+    content: url("../../../assets/images/tick.svg");
+    width: 10px;
+    height: 10px;
+}
+
+.mobile-filter-button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.modal {
+    padding-right: 0;
+}
+
+.modal-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: auto;
+}
+
+.modal-content {
+    height: calc(100vh - 100px);
+    border-radius: 10px;
+}
+
+.modal-footer .btn-danger {
+    background-color: #f43939;
+}
+
+.modal .custom-control-label {
+    font-weight: normal;
+}

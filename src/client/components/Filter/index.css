@@ -1,0 +1,158 @@
+.filter, .desktop-filter {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.desktop-filter .dropdown + .dropdown {
+	margin-left: 10px;
+}
+
+.desktop-filter .dropdown-menu {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top: 5px;
+}
+
+.custom-control {
+	padding-bottom: 5px;
+}
+
+.custom-control-label::before,
+.custom-control-label::after {
+  top: 0.1rem !important;
+  left: -2rem !important;
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+}
+
+.custom-control-input:checked~.custom-control-label::before{
+  background-color: #f43939;
+  border: none;
+}
+
+.custom-control-label {
+    margin-left: 0.5rem !important;
+    font-size: 1rem !important;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+	width: 200px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 15px;
+}
+
+.desktop-filter .dropdown-toggle, .desktop-filter .accordion .btn-primary {
+  background: none;
+  border-color: #999999;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: none;
+}
+
+.desktop-filter .dropdown-toggle:after {
+  border: none;
+  margin-left: .7em;
+  vertical-align: .1em;
+  content: url("../../assets/images/tick.svg");
+  width: 10px;
+  height: 10px;
+}
+
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle
+{
+	background: none;
+	color: black;
+	border-color: #999999;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+	box-shadow: none;
+}
+
+.see-all {
+	color: #f43939;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.desktop-filter .accordion {
+  z-index: 99999999;
+}
+
+.desktop-filter .accordion > div {
+  width: 100%;
+  padding-right: 130px;
+}
+
+.filter .desktop-filter-list {
+  margin-right: 30px;
+}
+
+.filter .desktop-filter-list h6 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.filter .desktop-filter-all:before {
+  content: url("../../assets/images/all-icon.svg");
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.filter .desktop-filter-all {
+  margin-right: 10px;
+  width: 90px;
+}
+
+.filter .desktop-filter {
+  display: flex;
+  width: 100%;
+}
+
+.filter .mobile-filter {
+  display: none;
+}
+
+@media screen and (max-width: 1365px) {
+  .desktop-filter .accordion > div {
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .desktop-filter .accordion > div {
+    width: 101%;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter .desktop-filter {
+    display: none;
+  }
+
+  .filter .mobile-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  .filter .mobile-filter .modal-content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+  }
+}
